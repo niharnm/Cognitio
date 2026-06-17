@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cognitio</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark" aria-hidden="true"></span>
+        <strong>Cognitio</strong>
+      </header>
+
+      <section class="controls">
+        <button id="verify-selection" type="button">Verify selection</button>
+        <button id="verify-page" type="button">Verify page</button>
+      </section>
+
+      <label for="api-base">API base</label>
+      <input id="api-base" type="url" value="http://localhost:3000" />
+
+      <section id="status" class="status">Select text or verify the current page when you want a check.</section>
+      <section id="result" class="result" hidden></section>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

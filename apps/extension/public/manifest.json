@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Cognitio",
+  "version": "0.1.0",
+  "description": "Verify selected public claims against evidence through your Cognitio API.",
+  "permissions": ["activeTab", "contextMenus", "scripting", "storage"],
+  "host_permissions": ["http://localhost:3000/*"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Cognitio"
+  }
+}
